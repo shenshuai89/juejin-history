@@ -1,0 +1,97 @@
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/lib/bootstrap.min.css" />
+  <script src="/lib/jquery-1.12.4.js"></script>
+  <script src="/lib/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      width: 460px;
+      height: 520px;
+      padding: 10px 20px;
+    }
+    #clearBtn {
+      width: 120px;
+      padding: 5px 10px;
+      margin: 2px 6px;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer
+    }
+    #container li{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5px 0;
+    }
+    #container li a{
+      text-decoration:none;
+      display: inline-block;
+      width: 360px;
+      height: 30px;
+      line-height: 30px;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    #container li span{
+      display: inline-block;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+    #pages ul li{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin: 0 2px;
+      cursor: pointer
+    }
+    .pagination{
+      margin: 10px 0;
+    }
+    /* 弹窗 */
+    .dialog{
+      width: 200px;
+      height: 120px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, .8);
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 14px;
+    }
+    .dialog .btn{
+      position: absolute;
+      bottom: 20px;
+      right: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+  </div>
+  <!-- <div id="pages" style="position: fixed; bottom: 10px; left: 10px;"></div> -->
+  <button id="clearBtn" type="button" class="btn btn-danger">清除数据</button>
+</body>
+  <script src="./js/popup.js"></script>
+
+</html>
